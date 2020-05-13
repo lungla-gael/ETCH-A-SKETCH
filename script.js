@@ -21,9 +21,9 @@ let button = document.querySelector('#clearGrid');
 function buttonEventListener() {
     button.addEventListener('click', clickButton);
     function changeColor(element) {
-        var red = Math.floor(Math.random()*256);
-        var green = Math.floor(Math.random()*256);
-        var blue = Math.floor(Math.random()*256);
+        let red = Math.floor(Math.random()*256);
+        let green = Math.floor(Math.random()*256);
+        let blue = Math.floor(Math.random()*256);
         element.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
     }
     divArray.forEach(element => {
