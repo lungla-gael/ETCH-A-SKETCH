@@ -1,0 +1,10 @@
+.flex-container{
+    width: 1280px;
+    background-color: blue;
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-container div{
+    margin: 1px;
+    background-color: aqua;
+}
