@@ -26,12 +26,8 @@ function buttonEventListener() {
         var blue = Math.floor(Math.random()*256);
         element.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
     }
-    function resetColor(element) {      
-        element.style.backgroundColor = 'aqua';
-    }
     divArray.forEach(element => {
         element.addEventListener('mouseenter', function(){ changeColor(element)});
-        element.addEventListener('mouseleave', function(){ resetColor(element)});
     });    
 }
 
