@@ -46,6 +46,7 @@ function clearTheGrid() {
 function clickButton() {
     clearTheGrid();
     let numberOfSquaresPerSide = prompt("enter the the number of squares you want per side");
-    createGrid(numberOfSquaresPerSide);button.addEventListener('click', clickButton);
+    createGrid(numberOfSquaresPerSide);
+    button.addEventListener('click', clickButton);
     buttonEventListener();
 }
