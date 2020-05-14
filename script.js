@@ -27,7 +27,7 @@ function buttonEventListener() {
         element.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
     }
     divArray.forEach(element => {
-        element.addEventListener('mouseenter', function(){ changeColor(element)});
+        element.addEventListener('mouseover', function(){ changeColor(element)});
     });    
 }
 
