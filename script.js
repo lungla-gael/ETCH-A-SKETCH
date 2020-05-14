@@ -17,7 +17,24 @@ function createGrid(numberOfSquaresPerSide) {
     }    
 }
 
+let blackButton = document.querySelector('#blackButton');
+blackButton.addEventListener('click', function(e){
+    let red = 100;
+    let blue = 100;
+    let green = 100;
+
+    divArray.forEach(element => {
+        element.addEventListener('mouseover', function(e){
+            red -= 10;
+            blue -= 10;
+            green -= 10;
+            e.target.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
+        });
+    });   
+});
+
 let button = document.querySelector('#clearGrid');
+
 function buttonEventListener() {
     button.addEventListener('click', clickButton);
     function changeColor(element) {
